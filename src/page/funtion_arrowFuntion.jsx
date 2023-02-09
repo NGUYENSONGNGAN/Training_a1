@@ -34,6 +34,7 @@ const function_arrowfunction = () => {
     <>
       <p>function_arrowfunction </p>
       {exeArrowFunction()}
+
       {exeFunction()}
       {Thamso("test")}
       {/* => hello test */}
