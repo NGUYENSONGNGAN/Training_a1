@@ -1,9 +1,10 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Destructuring from "../page/detracturing";
-import Funtion_arrowFuntion from "../page/funtion_arrowFuntion";
-import Spread_restOperator from "../page/spread_restOperator";
-import Var_let_cont from "../page/var_let_const";
+import ArrayInJs from "../page/array";
+import Destructuring from "../page/destructuring";
+import Funtion_arrowFuntion from "../page/funtionArrowFuntion";
+import Spread_restOperator from "../page/spreadRestOperator";
+import Var_let_cont from "../page/varLetConst";
 const Router = () => {
   return (
     <Routes>
@@ -11,6 +12,7 @@ const Router = () => {
       <Route path="/funtion" element={<Funtion_arrowFuntion />} />
       <Route path="/spread" element={<Spread_restOperator />} />
       <Route path="/destructuring" element={<Destructuring/>} />
+      <Route path="/array" element={<ArrayInJs/>} />
     
     </Routes>
   );
