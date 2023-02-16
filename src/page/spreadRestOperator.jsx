@@ -12,7 +12,20 @@ const Spread_restOperator = () => {
   const numbers = [1, 2, 3];
 
   console.log(sum(...numbers)); // Expected output: 6
+  //exe rest operator
+  //... means gather the remaining parameters into an array.
+  function sum(...args) {
+    // args is the name for the array
+    let sum = 0;
 
+    args.forEach((arg) => (sum += arg));
+
+    return sum;
+  }
+
+  console.log(sum(1)); // 1
+  console.log(sum(1, 2)); // 3
+  console.log(sum(1, 2, 3)); // 6
   //syntax
   /* myFunction(a, ...iterableObj, b)
 [1, ...iterableObj, '4', 'five', 6]
@@ -52,8 +65,8 @@ const array = [...obj]; // TypeError: obj is not iterable */
   console.log(mergedObj); // { foo: "baz", x: 42, y: 13 }
 
   //difference between spread and rest operator
-//The main difference between rest and spread is that the rest operator puts the rest of some specific user-supplied values into a JavaScript array.
-// But the spread syntax expands iterables into individual elements.
+  //The main difference between rest and spread is that the rest operator puts the rest of some specific user-supplied values into a JavaScript array.
+  // But the spread syntax expands iterables into individual elements.
   return <p>spread_restOperator </p>;
 };
 
