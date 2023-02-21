@@ -7,6 +7,7 @@ import Funtion_arrowFuntion from "../page/funtionArrowFuntion";
 import FunctionClasscomponent from "../page/functionClassComponent";
 import Spread_restOperator from "../page/spreadRestOperator";
 import Var_let_cont from "../page/varLetConst";
+import ArrayReduce from "../page/arrayReduce";
 const Router = () => {
   return (
     <Routes>
@@ -15,6 +16,7 @@ const Router = () => {
       <Route path="/spread" element={<Spread_restOperator />} />
       <Route path="/destructuring" element={<Destructuring />} />
       <Route path="/array" element={<ArrayInJs />} />
+      <Route path="/arrayReduce" element={<ArrayReduce />} />
       <Route path="/component" element={<ComponentArchitecture />} />
       <Route path="/component" element={<FunctionClasscomponent />} />
     </Routes>
