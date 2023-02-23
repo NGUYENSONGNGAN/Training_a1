@@ -8,6 +8,7 @@ import FunctionClasscomponent from "../page/functionClassComponent";
 import Spread_restOperator from "../page/spreadRestOperator";
 import Var_let_cont from "../page/varLetConst";
 import ArrayReduce from "../page/arrayReduce";
+import PropsState from "../page/propsState";
 const Router = () => {
   return (
     <Routes>
@@ -19,6 +20,7 @@ const Router = () => {
       <Route path="/arrayReduce" element={<ArrayReduce />} />
       <Route path="/component" element={<ComponentArchitecture />} />
       <Route path="/component" element={<FunctionClasscomponent />} />
+      <Route path="/propState" element={<PropsState />} />
     </Routes>
   );
 };
