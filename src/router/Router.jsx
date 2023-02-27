@@ -10,6 +10,7 @@ import Var_let_cont from "../page/varLetConst";
 import ArrayReduce from "../page/arrayReduce";
 import PropsState from "../page/propsState";
 import UseState from "../page/useState";
+import UseEffect from "../page/useEffect";
 const Router = () => {
   return (
     <Routes>
@@ -23,6 +24,7 @@ const Router = () => {
       <Route path="/component" element={<FunctionClasscomponent />} />
       <Route path="/propState" element={<PropsState />} />
       <Route path="/useState" element={<UseState />} />
+      <Route path="/useEffect" element={<UseEffect />} />
     </Routes>
   );
 };
