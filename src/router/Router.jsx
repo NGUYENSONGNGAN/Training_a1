@@ -13,6 +13,8 @@ import UseState from "../page/useState";
 import UseEffect from "../page/useEffect";
 import UseEffectTimer from "../page/useEffectTime";
 import UseRef from "../page/useRef";
+import UseMemo from "../page/useMemo";
+import UseCallback from "../page/useCallback";
 const Router = () => {
   return (
     <Routes>
@@ -29,6 +31,9 @@ const Router = () => {
       <Route path="/useEffect" element={<UseEffect />} />
       <Route path="/useEffectTimer" element={<UseEffectTimer />} />
       <Route path="/useRef" element={<UseRef />} />
+      <Route path="/useMemo" element={<UseMemo />} />
+      <Route path="/useCallback" element={<UseCallback />} />
+      <Route path="/useReducer" element={<UseMemo />} />
     </Routes>
   );
 };
