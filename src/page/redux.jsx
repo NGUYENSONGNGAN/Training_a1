@@ -16,7 +16,7 @@ const ReduxInReact = () => {
   const dispash = useDispatch();
   //useDispatch is a hook of the Redux Toolkit and React Redux
   //used to dispatch an action to the Redux store.
-  console.log(hobby);
+  
   const hanleSubmit = () => {
     const newHobby = {
       id: 2,
