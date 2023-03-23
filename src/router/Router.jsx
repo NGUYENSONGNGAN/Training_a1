@@ -16,6 +16,7 @@ import UseRef from "../page/useRef";
 import UseMemo from "../page/useMemo";
 import UseCallback from "../page/useCallback";
 import ReduxInReact from "../page/redux";
+import UseReducer from "../page/usereducer";
 const Router = () => {
   return (
     <Routes>
@@ -34,7 +35,7 @@ const Router = () => {
       <Route path="/useRef" element={<UseRef />} />
       <Route path="/useMemo" element={<UseMemo />} />
       <Route path="/useCallback" element={<UseCallback />} />
-      <Route path="/useReducer" element={<UseMemo />} />
+      <Route path="/useReducer" element={<UseReducer />} />
       <Route path="/redux" element={<ReduxInReact />} />
     </Routes>
   );
